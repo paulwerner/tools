@@ -37,3 +37,4 @@ Planned stack: SvelteKit (SPA) + TypeScript (strict) + Docker Compose for dev. A
 
 - Tools are independent — each can have its own language, framework, and build process.
 - When adding a new tool, place it under `human/` or `agentic/` depending on its intended operator, in its own subdirectory (or as a single file for simple tools).
+- **Plan persistence:** When an implementation plan is accepted, persist it at `<tool-dir>/docs/plans/NNN-brief-summary.md` (zero-padded sequential number, kebab-case summary). Persisting the plan is always the first step before starting implementation. Each plan file captures scope, approach, and verification criteria.
