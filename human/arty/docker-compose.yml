@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src
+      - ./static:/app/static
+      - ./svelte.config.js:/app/svelte.config.js
+      - ./vite.config.ts:/app/vite.config.ts
+      - ./tsconfig.json:/app/tsconfig.json
+    environment:
+      - NODE_ENV=development
