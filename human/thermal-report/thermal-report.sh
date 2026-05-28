@@ -195,4 +195,3 @@ if [ -n "${SUDO_USER:-}" ]; then
 fi
 
 printf '\nReport written to: %s\n' "$(readlink -f "$REPORT" 2>/dev/null || echo "$REPORT")"
-printf 'Share that file (or paste its contents) for analysis.\n'
